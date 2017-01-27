@@ -3,6 +3,9 @@ package etl;
 public class FileCsvExtractor implements Extractor {
     @Override
     public User[] extract() {
-        return new User[0];
+        //....
+        if (true) throw new RuntimeException("Illegal Format");
+        return null;
+        //.....
     }
 }

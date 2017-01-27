@@ -1,5 +1,10 @@
 package etl;
 
+import etl.domain.EtlController;
+import etl.domain.EtlException;
+import etl.domain.Loader;
+import etl.extractor.FileCsvExtractor;
+
 public class EtlTest {
     public static void main(String[] args) throws TestFailException {
         try {
@@ -13,6 +18,6 @@ public class EtlTest {
             return;
         }
 
-        throw new TestFailException();//fail();
+        throw new TestFailException(); //fail();
     }
 }

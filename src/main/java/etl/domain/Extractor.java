@@ -1,7 +1,7 @@
 package etl.domain;
 
-import etl.extractor.EtlFormatException;
+import etl.extractor.CsvFormatException;
 
 public interface Extractor {
-    User[] extract() throws EtlFormatException;
+    User[] extract() throws CsvFormatException;
 }

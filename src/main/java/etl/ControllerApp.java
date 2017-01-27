@@ -1,7 +1,7 @@
 package etl;
 
 public class ControllerApp {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws EtlException {
         new EtlController(
             new FileCsvExtractor(),
             new Loader[] {new FileXmlLoader(), new FileXmlLoader()}

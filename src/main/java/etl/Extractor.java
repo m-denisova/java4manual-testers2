@@ -1,5 +1,5 @@
 package etl;
 
 public interface Extractor {
-    User[] extract();
+    User[] extract() throws EtlFormatException;
 }

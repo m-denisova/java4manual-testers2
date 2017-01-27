@@ -1,10 +1,12 @@
 package etl;
 
+import java.io.IOException;
+
 public class FileCsvExtractor implements Extractor {
     @Override
-    public User[] extract() {
+    public User[] extract() throws EtlFormatException, IOException {
         //....
-        if (true) throw new RuntimeException("Illegal Format");
+        if (true) throw new EtlFormatException("Illegal Format");
         return null;
         //.....
     }

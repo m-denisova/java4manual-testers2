@@ -81,9 +81,9 @@
 ## 8. Exceptions (2)
 - Exceptions in Java 
 - Exception handling strategies
-- Try-with-resources
 - Exception types in Java
-- Best practices for exception type system design 
+- Best practices for exception type system design
+- Try-with-resources
 
 ## 9. System Library (3)
 - j.l.System 

@@ -10,8 +10,7 @@ public class EtlController {
         this.loaders = loaders;
     }
 
-    public void doEtl() {
-        EtlException etlException = null;
+    public void doEtl() throws EtlException {
         try {
             //....
             final User[] extractedUsers = extractor.extract();
@@ -20,14 +19,11 @@ public class EtlController {
             }
             //.....
         } catch (RuntimeException e) {
-            etlException = new EtlException("Etl problem, don't panic!!!", e);
-            throw etlException;
+            throw new EtlException("Etl problem, don't panic!!!", e, 5);
         } catch (Exception e) {
 
         } finally {
-            final RuntimeException runtimeException = new RuntimeException("3");
-            if (etlException != null) runtimeException.addSuppressed(etlException);
-            throw runtimeException;
+
         }
     }
 }

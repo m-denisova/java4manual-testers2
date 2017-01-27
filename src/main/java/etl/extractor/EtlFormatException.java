@@ -1,8 +1,5 @@
-package etl;
+package etl.extractor;
 
-/**
- * Created by eugene on 27/01/2017.
- */
 public class EtlFormatException extends Exception {
     public EtlFormatException() {
         super();

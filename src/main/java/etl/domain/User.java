@@ -1,4 +1,4 @@
-package etl;
+package etl.domain;
 
 //POJO: DTO
 public class User {

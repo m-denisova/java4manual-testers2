@@ -1,4 +1,4 @@
-package etl;
+package etl.domain;
 
 public class EtlException extends Exception {
     private int usersCount;
